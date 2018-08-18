@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html  lang="en">
 <head>
 	<meta charset="UTF-8">
 	<title>Netpaula</title>
@@ -9,7 +9,7 @@
 
 <body>
 	<header>
-		<div class="navigate">
+		<div class="navigate navigate-color" id="navigate">
 			<div class="contenedor"> 
 				<div class="banner">
 					<li>
@@ -35,7 +35,9 @@
 				</div>
 				<div class="banner-2">
 					<li>
-						<a href="">Buscar</a>
+					<form action="" class="search" id="form">
+            			<input type="text" name="name" placeholder="Titulos, Personas, Generos"/>
+         		    </form>
 					</li>
 					<li>
 						<a href="">niños</a>
@@ -51,10 +53,15 @@
 		</div>
 	</header>
 	<section class="background ">
+		<div class="video-container" id="video-container">
+			<video 
+				src="http://distribution.bbb3d.renderfarming.net/video/mp4/bbb_sunflower_1080p_60fps_normal.mp4" id="video" poster="images/background2.png" >
+			</video>
+		</div>
 		<div class="descripcion contenedor-descrip">
 			<div class="info">
 				<h2>Original de <span class="netflix">Netflix</span></h2>
-				<h1>Soy <br><span class="title-h1">un Asesino</span></h1>
+				<h1>Big <br><span class="title-h1">Buck Bunny</span></h1>
 				<button class="button">Reproducir</button>
 				<button class="button">+ Mi lista</button>
 			</div>
@@ -65,42 +72,37 @@
 		</div>
 	</section>
 	<section class="playlist">
-		<div class="playlist-list">
-			<h4 class="contenedor">Agregados Recientemente<h4>
-			<div class="playlist-item">
+
+		<div class= "playlist-contenedor">
+    		<h2 class="playlist-title contenedor">Acción</h2>
+    		<div class="playlist-list" id="action">
 				<img src="images/midnight.jpg" width="244" height="137">
-			</div>
-		</div>
-		<div class="playlist-list">
-			<h4 class="contenedor">Mi lista<h4>
-			<div class="playlist-item">
-				<img src="images/midnight.jpg" width="244" height="137">
-			</div>
-		</div>
-		<div class="playlist-list">
-			<h4 class="contenedor">Accion y aventura<h4>
-			<div class="playlist-item">
-				<img src="images/midnight.jpg" width="244" height="137">
-			</div>
-		</div>
-		<div class="playlist-list">
-			<h4 class="contenedor">Comedia<h4>
-			<div class="playlist-item">
-				<img src="images/midnight.jpg" width="244" height="137">
-			</div>
-		</div>
-		<div class="playlist-list">
-			<h4 class="contenedor">Originales Netflix<h4>
-			<div class="playlist-item">
-				<img src="images/midnight.jpg" width="244" height="137">
-			</div>
-		</div>
-		<div class="playlist-list">
-			<h4 class="contenedor">TV de terror y ciencia ficción<h4>
-			<div class="playlist-item">
-				<img src="images/midnight.jpg" width="244" height="137">
-			</div>
-		</div>
+    		</div>
+  		</div>
+		<div class="margin"></div>
+		<div class= "playlist-contenedor ">
+	   		<h2 class="playlist-title contenedor">Fantasia</h2>
+	   		<div class="playlist-list" id="fantasy">
+				<div class="playlist-item">Contenido</div>
+	   		</div>
+  		</div>
+  		
+		<div class="margin"></div>
+  		<div class= "playlist-contenedor ">
+    		<h2 class="playlist-title contenedor">Romance</h2>
+    		<div class="playlist-list" id="romance">
+				<div class="playlist-item">Contenido</div>
+    		</div>
+  		</div>
+
+		<div class="margin"></div>
+  		<div class= "playlist-contenedor ">
+    		<h2 class="playlist-title contenedor">Horror</h2>
+    		<div class="playlist-list" id="horror">
+				<div class="playlist-item">Contenido</div>
+    		</div>
+  		</div>
+		<div class="margin"></div>
 	</section>
 	<footer>
 		<div class="footer-content">
@@ -137,5 +139,7 @@
 			<li>@ 1997 - 2018 Netflix, Inc</li>
 		</div>
 	</footer>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="Js/home.js"></script>
 </body>
 </html>
