@@ -15,7 +15,7 @@ console.log('hola');
       return (
 	    `
 			<div class="playlist-item" data-id="${movie.id}" data-category="${category}">
-		    <iframe class="playlist-video" width="350" height="200" src="https://www.youtube.com/embed/${movie.yt_trailer_code}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		    <iframe class="playlist-video" width="350" height="200" src="" data-src="https://www.youtube.com/embed/${movie.yt_trailer_code}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 				<img src="${movie.medium_cover_image}" width="244" height="137">
 		  </div>
 		`
@@ -36,13 +36,15 @@ console.log('hola');
       
       const image = movieElement.querySelector('img');
       const video = movieElement.querySelector('iframe')
+      
       movieElement.addEventListener('mouseenter', (event)=>{
-        console.log(video);
-		  video.classList.remove('playlist-video');
+        console.log(video); 
+        video.setAttribute('src', video.dataset.src);
+		    video.classList.remove('playlist-video');
       })
       movieElement.addEventListener('mouseleave', (event)=>{
         console.log(video);
-		  video.classList.add('playlist-video');
+		    video.classList.add('playlist-video');
       })
     })
   }
@@ -139,6 +141,25 @@ window.addEventListener('scroll', () => {
     }
 })
 
+ const searchIcon = document.getElementById('searchIcon');
+ const form = document.getElementById('form');
+ const inputForm =document.getElementById('inputForm');
+// const formBar = getElementById('form');
 
+ searchIcon.addEventListener('click', (event)=>{
+  form.style.display='block';
+  searchIcon.classList.remove('icon-search');
+  inputForm.focus();
+})
 
-
+ form.addEventListener('click', (event)=>{
+  event.stopPropagation();
+  form.style.display='none';
+  searchIcon.classList.add('icon-search');
+})
+form.addEventListener('submit', (event)=>{
+  event.preventDefault();
+  form.style.display='none';
+  searchIcon.classList.add('icon-search');
+  // form.classList.add('search-form');
+})

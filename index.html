@@ -8,51 +8,50 @@
 </head>
 
 <body>
-	<header>
-		<div class="navigate navigate-color" id="navigate">
-			<div class="contenedor"> 
-				<div class="banner">
-					<li>
-						<a href="">
-						<img src="images/Netflix-logo.png" width="93" height="33">
-						</a>
-					</li>
-					<li>
-						<a href=""><span class="white">Inicio</span></a>
-					</li>
-					<li>
-						<a href="">Programas de TV</a>
-					</li>
-					<li>
-						<a href="">Peliculas</a>
-					</li>
-					<li>
-						<a href="">Agregados recientemente</a>
-					</li>
-					<li>
-						<a href="">Mi lista</a>
-					</li>
-				</div>
-				<div class="banner-2">
-					<li>
-					<form action="" class="search" id="form">
-            			<input type="text" name="name" placeholder="Titulos, Personas, Generos"/>
+	<header class="header navigate-color" id="navigate">
+		<div class="contenedor"> 
+			<div class="banner">
+				<li>
+					<a href="">
+					<img src="images/Netflix-logo.png" width="93" height="33">
+					</a>
+				</li>
+				<li>
+					<a href=""><span class="white">Inicio</span></a>
+				</li>
+				<li>
+					<a href="">Programas de TV</a>
+				</li>
+				<li>
+					<a href="">Peliculas</a>
+				</li>
+				<li>
+					<a href="">Agregados recientemente</a>
+				</li>
+				<li>
+					<a href="">Mi lista</a>
+				</li>
+			</div>
+			<div class="banner-2">
+				<li>
+					<i id="searchIcon" class="icon-search"></i>
+					<form id="form" class="search-form">
+            			<span class="icon-search"></span> <input id="inputForm" autofocus type="text" name="name" placeholder="Titulos, Personas, Generos"/>
          		    </form>
-					</li>
-					<li>
-						<a href="">niños</a>
-					</li>
-					<li>
-						<a href="">campanita</a>
-					</li>
-					<li>
-						<a href="">perfil</a>
-					</li>
-				</div>
+				</li>
+				<li>
+					<a href="">niños</a>
+				</li>
+				<li>
+					<a href="" id="bell"><span class="icon-bell"></span></a>
+				</li>
+				<li>
+					<a href="">perfil</a>
+				</li>
 			</div>
 		</div>
 	</header>
-	<section class="background ">
+	<section class="background">
 		<div class="video-container" id="video-container">
 			<video 
 				src="http://distribution.bbb3d.renderfarming.net/video/mp4/bbb_sunflower_1080p_60fps_normal.mp4" id="video" poster="images/background2.png" >
@@ -78,31 +77,33 @@
     		<div class="playlist-list" id="action">
 				<img src="images/midnight.jpg" width="244" height="137">
     		</div>
+    		<div class="margin"></div>
   		</div>
-		<div class="margin"></div>
+		
 		<div class= "playlist-contenedor ">
 	   		<h2 class="playlist-title contenedor">Fantasia</h2>
 	   		<div class="playlist-list" id="fantasy">
-				<div class="playlist-item">Contenido</div>
+				<img src="images/midnight.jpg" width="244" height="137">
 	   		</div>
+	   		<div class="margin"></div>
   		</div>
   		
-		<div class="margin"></div>
   		<div class= "playlist-contenedor ">
     		<h2 class="playlist-title contenedor">Romance</h2>
     		<div class="playlist-list" id="romance">
-				<div class="playlist-item">Contenido</div>
+				<img src="images/midnight.jpg" width="244" height="137">
     		</div>
+    		<div class="margin"></div>
   		</div>
 
-		<div class="margin"></div>
   		<div class= "playlist-contenedor ">
     		<h2 class="playlist-title contenedor">Horror</h2>
     		<div class="playlist-list" id="horror">
-				<div class="playlist-item">Contenido</div>
+				<img src="images/midnight.jpg" width="244" height="137">
     		</div>
+    		<div class="margin"></div>
   		</div>
-		<div class="margin"></div>
+		
 	</section>
 	<footer>
 		<div class="footer-content">
