@@ -103,6 +103,7 @@ body {
 	left: 0;
 	transition: .4s;
 	height: 70px;
+	z-index: 3;
 }
 .header .contenedor{
 	display: flex;
